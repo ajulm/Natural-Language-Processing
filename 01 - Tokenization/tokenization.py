@@ -1,7 +1,11 @@
+# To run the below python program, (NLTK) natural language toolkit has to be installed in your system.
+
 import nltk
 
-nltk.download()
-# nltk.download('punkt')
+
+""" Downloading all before executing below commands """
+# nltk.download('all')
+
 
 
 paragraph = """I have three visions for India. In 3000 years of our history, people from all over 
@@ -30,6 +34,9 @@ paragraph = """I have three visions for India. In 3000 years of our history, peo
                
 # Tokenizing sentences
 sentences = nltk.sent_tokenize(paragraph)
+print(sentences)
 
 # Tokenizing words
 words = nltk.word_tokenize(paragraph)
+print(words)
+
